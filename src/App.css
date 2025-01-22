@@ -1,0 +1,176 @@
+/* App Container */
+.AppContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: Montserrat, sans-serif;
+}
+
+.AppLabel {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+  visibility: hidden;
+}
+
+.ErrorMessage {
+  color: red;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+/* Main Container */
+.MainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+/* City Component */
+.CityComponent {
+  flex: 1;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.WelcomeLogo {
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+}
+
+.SearchBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px 0;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.SearchBox input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.SearchBox button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.HistoryContainer {
+  margin-top: 20px;
+  width: 250px;
+}
+
+.HistoryLabel {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.HistoryList {
+  list-style: none;
+  padding: 0;
+}
+
+.HistoryItem {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  align-items: start;
+}
+
+/* Weather Component */
+.WeatherComponent {
+  flex: 1;
+  margin-left: 100px;
+  margin-right: 20px;
+}
+
+.WeatherContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weatherimg {
+  width: 100px;
+  height: 100px;
+}
+
+.Condition {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.Location {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.WeatherInfoContainer {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.InfoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.InfoIcon {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.InfoLabel {
+  align-items: center;
+  font-size: 14px;
+  padding: auto;
+  margin: auto;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .MainContainer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Add padding to the top */
+    padding-bottom: 20px; /* Add padding to the bottom */
+  }
+
+  .WeatherComponent {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+  }
+
+
+}
